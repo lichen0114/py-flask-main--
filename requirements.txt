@@ -1,0 +1,4 @@
+flask>=2.1.2
+flask-sqlalchemy>=2.5.1
+xlrd>=2.0.1
+flask-wtf>=1.0.1

@@ -1,0 +1,31 @@
+<h2>資訊之芽簽到表單</h2>
+<h1>Hello {{name}}!</h1>
+
+{% if get_flashed_messages() %}
+    {% for msg in get_flashed_messages() %}
+        <p>{{msg}}</p>
+    {% endfor %}
+{% endif %}
+
+<form method="POST">
+    {{ form.hidden_tag() }}
+    <div>
+        {{form.name.label}} {{form.name()}}
+    </div>
+    <div>
+        {{form.email.label}} {{form.email()}}
+    </div>
+    <div>
+        {{form.studentId.label}} {{form.studentId()}}
+    </div>
+    <div>
+        {{form.message.label}} {{form.message()}}
+    </div>
+    <div>
+        {{form.submit()}}
+    </div>
+
+</form>
+
+<a href="{{url_for("clear")}}">清除Session</a>
+
