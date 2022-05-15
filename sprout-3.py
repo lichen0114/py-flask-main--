@@ -11,7 +11,7 @@ def index():
 
 @app.route("/jay")
 def jaySayHi():
-    return render_template("jay.html", longName="阿傑", shortName="傑哥")
+    return render_template("jay.html", longName="阿傑", shortName="超會喝")
 
 
 @app.route("/adult")
@@ -26,7 +26,7 @@ def adult():
 
 @app.route("/store")
 def store():
-    cart = {"酒": 10, "麵包": 20, "南瓜": 887414}
+    cart = {"酒": 10, "麵包": 204, "南瓜": 887414}
     return render_template("store.html", cart=cart)
 
 
